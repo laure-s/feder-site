@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="header__inner">
+    <!-- <img class="header__logo" src="images/logo.png" alt="iconic view of a cityscape"> -->
+    <h2 class="header__title">
+      פדר אדריכלים
+    </h2>
+    <a id="menu" class="header__menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" (click)="toggleSideNav()">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
+    </a>
+    <nav #sidenav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item nav_red"><a routerLink="">בית</a></li>
+        <li class="nav__item nav_blue"><a routerLink="#">נגישות</a></li>
+        <li class="nav__item nav_violet"><a routerLink="#">מקווה</a></li>
+        <li class="nav__item nav_green"><a routerLink="#">פרויקטים</a></li>
+        <li class="nav__item nav_yellow"><a routerLink="about">אודות</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <ul>
+    <li>09-7412633</li>
+    <li><a href="#">feder@architect.co.il</a></li>
+    <li><a href="#">@ Laure Scemama Site</a></li>
+  </ul>
+</footer>
