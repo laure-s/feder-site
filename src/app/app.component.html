@@ -4,12 +4,12 @@
     <h2 class="header__title">
       פדר אדריכלים
     </h2>
-    <a id="menu" class="header__menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" (click)="toggleSideNav()">
+    <a id="menu" class="header__menu" (click)="toggleSideNav()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
       </svg>
     </a>
-    <nav #sidenav id="drawer" class="nav">
+    <nav id="drawer" class="nav">
       <ul class="nav__list">
         <li class="nav__item nav_red"><a routerLink="">בית</a></li>
         <li class="nav__item nav_blue"><a routerLink="#">נגישות</a></li>

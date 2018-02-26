@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  sideNavBool: boolean = true;
   title = 'My First Angular App!';
+
   toggleSideNav() {
-    this.sidenav.toggleSideNav();
+    if (sideNavBool) {
+      document.querySelector('.nav').classList.toggle('open');
+    } else { document.querySelector('.nav').classList.remove('open'); }
+      sideNavBool = !sideNavBool;
   }
 
 }
